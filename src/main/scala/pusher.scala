@@ -2,7 +2,6 @@ package dispatch.pusher
 
 import dispatch._
 import dispatch.Request._
-import scala.collection.mutable.{ OpenHashMap => OHM }
 
 case class PusherRequest(appId: String, channel: String, key: String, secret: String, event: String, val data: String, socketId: Option[String], authVersion: String = "1.0") {
   import Security._
