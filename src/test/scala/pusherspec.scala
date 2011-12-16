@@ -3,7 +3,6 @@ package dispatch.pusher
 import org.specs2.mutable._
 import dispatch._
 import Pusher._
-import scala.collection.mutable.{ OpenHashMap => OHM }
 
 class PusherSpec extends Specification {
   "Pusher request" should {
