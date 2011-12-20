@@ -20,6 +20,7 @@ Scala [dispatch](https://github.com/dispatch/dispatch) publishing library for [P
     ```
     
  * finally ... test example ...
+ 
     ```scala
     val vars = List("PUSHER_KEY", "PUSHER_SECRET", "PUSHER_APIID")
     val (key :: secret :: apiId :: Nil) = vars.map { v => Option(System.getenv(v)) }
