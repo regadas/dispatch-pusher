@@ -6,17 +6,21 @@ Scala [dispatch](https://github.com/dispatch/dispatch) publishing library for [P
 ## Usage
 
  * using [SBT](https://github.com/harrah/xsbt) on `build.scala` put the following:
-
+    
+    ```
     resolvers ++= Seq("regadas repo" at "https://github.com/regadas/repo/raw/master")
 
     libraryDependencies += "com.regadas" %% "dispatch-pusher" % "0.1"
+    ```
     
  * depends on [dispatch](https://github.com/dispatch/dispatch).
- 
+    
+    ```
     libraryDependencies += "net.databinder" %% "dispatch-http" % "0.8.6"
+    ```
     
  * finally ... test example ...
- 
+    ```scala
     val vars = List("PUSHER_KEY", "PUSHER_SECRET", "PUSHER_APIID")
     val (key :: secret :: apiId :: Nil) = vars.map { v => Option(System.getenv(v)) }
 
@@ -40,3 +44,4 @@ Scala [dispatch](https://github.com/dispatch/dispatch) publishing library for [P
       })
       status must_==202
     }
+    ```
