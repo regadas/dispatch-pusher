@@ -3,7 +3,7 @@ dispatch-pusher
 
 Scala [dispatch](https://github.com/dispatch/dispatch) publishing library for [Pusher](http://pusher.com)
 
-== Usage
+## Usage
 
  * using [SBT](https://github.com/harrah/xsbt) on `build.scala` put the following:
 
