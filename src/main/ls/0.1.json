@@ -1,0 +1,19 @@
+
+{
+ "organization":"me.regadas",
+ "name":"dispatch-pusher",
+ "version":"0.1",
+ "description":"Scala dispatch client library for Pusher.",
+ "site":"https://github.com/regadas",
+ "tags":["dispatch","pusher","client"],
+ "docs":"",
+ "licenses": [],
+ "resolvers": ["https://github.com/regadas/repo/raw/master"],
+ "dependencies": [{
+   "organization":"net.databinder",
+   "name": "dispatch-core",
+   "version": "0.8.6"
+  }],
+ "scalas": ["2.9.1"],
+ "sbt": false
+}
